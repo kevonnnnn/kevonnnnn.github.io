@@ -1,6 +1,7 @@
+body{
 background: rgb(125, 198, 205);
 color: rgb(45, 45, 45);
-padding: 10px;
+padding: 10px;2
 font-family: arial;
 }
 #all-contents {
@@ -12,6 +13,7 @@ margin: auto;
 nav {
 background: rgb(36, 45, 140);
 margin: 0 auto;
+margin-bottom: 20px;
 display: flex;
 padding: 10px;
 }
@@ -58,3 +60,52 @@ padding: 8px;
 }
 h2, h3 {
 margin: 0px;
+            /* responsive web design */
+            @media screen and (min-width: 120px) and (max-width: 1080px) {
+                main {
+                  height: 100ch;
+                  zoom: 1.5;
+                  display: grid;
+                }
+  
+                h1 {
+                  font-size: 44px;
+                }
+  
+                h2 {
+                  font-size: 42px;
+                }
+  
+                h3 {
+                  font-size: 36px;
+                }
+  
+                #all-contents {
+                  height: 100ch;
+                  margin: none;
+                }
+  
+                a {
+                  font-size: 42px;
+                }
+  
+                .sidebar {
+                  margin-right: 0px;
+                  justify-content: center;
+                  align-items: center;
+                }
+  
+                .sidebar-img {
+                  width: 100%;
+                }
+  
+                p,
+                li {
+                  font-size: 25px;
+                }
+  
+                .content {
+                  align-content: center;
+                  justify-content: center;
+                }
+            }
